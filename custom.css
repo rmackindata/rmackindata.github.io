@@ -16,7 +16,7 @@ button, input, optgroup, select, textarea {
 }
 
 nav.navbar.navbar-expand-lg a {
-    color: teal;
+    color: #3b5cc4;
     font-weight: 700;
     font-size: 18px;
 }
@@ -27,7 +27,7 @@ li.nav-item {
 
 .headline {
   background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,89,1) 0%, rgba(0,212,255,1) 82%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,92,196,1) 0%, rgba(255,107,74,1) 100%);
   color: white;
   font-weight: 700;
   padding: 80px;
@@ -39,7 +39,7 @@ pre {
 }
 
 .hero {
-  background: teal;
+  background: #3b5cc4;
   height: 50px;
   width: 100%;
 }
@@ -55,7 +55,7 @@ pre {
 }
 
 h2 {
-  color: teal;
+  color: #3b5cc4;
 }
 
 .col-border {
@@ -72,7 +72,7 @@ footer.footer-banner {
 #webcoderskull{
     position: absolute;
     left: 0;
-    top: 7%;
+    top: 8%;
     padding: 0 20px;
     width: 100%;
     text-align: center;
@@ -81,7 +81,7 @@ footer.footer-banner {
 
 canvas{
     height:33vh;
-    background-color:#195b97;
+    background-color:#3b5cc4;
 }
 #webcoderskull h4{
   letter-spacing: 5px;
