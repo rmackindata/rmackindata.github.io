@@ -26,11 +26,40 @@ li.nav-item {
 }
 
 .headline {
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,92,196,1) 0%, rgba(255,107,74,1) 100%);
   color: white;
   font-weight: 700;
-  padding: 80px;
+  padding: 80px 80px 0 80px;
+  font-size: 2rem;
+}
+
+h1.text-center.headline a {
+    color: #fff;
+}
+
+h1.text-center.headline a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  position: relative;
+}
+
+h1.text-center.headline a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+h1.text-center.headline a:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 pre {
@@ -54,19 +83,27 @@ pre {
   font-size: 5rem !important;
 }
 
+a {
+    color: #f46a53;
+}
+
 h2 {
   color: #3b5cc4;
 }
 
-.col-border {
-  border: 1px solid grey;
+::marker {
+    color: #3b5cc4;
 }
 
-footer.footer-banner {
-  width: 100%;
-  background: teal;
-  height: 5px;
+ul {
+    margin-bottom: 0;
 }
+
+.col-border {
+  border: 1px solid #3b5cc4;
+}
+
+
 
 
 #webcoderskull{
@@ -85,8 +122,46 @@ canvas{
 }
 #webcoderskull h4{
   letter-spacing: 5px;
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.headline-bottom {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,92,196,1) 0%, rgba(255,107,74,1) 100%);
+  color: white;
+  font-weight: 700;
+  padding: 80px;
+  font-size: 2rem;
+}
+
+h1.text-center.headline-bottom a {
+    color: #fff;
+}
+
+h1.text-center.headline-bottom a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+
+h1.text-center.headline-bottom a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+h1.text-center.headline-bottom a:hover::after {
+  width: 100%;
+  left: 0;
 }
