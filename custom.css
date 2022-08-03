@@ -294,3 +294,8 @@ p.company-title span {
     font-weight: 400;
 		padding-left: 50px;
 }
+
+
+span#fourzerofour {
+    font-size: 12rem;
+}
