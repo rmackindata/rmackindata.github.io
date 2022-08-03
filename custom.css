@@ -211,6 +211,86 @@ h1.text-center.headline-bottom a:hover::after {
 	left: 0;
 }
 
+/* 404 pahe */
+
+
 span#fourzerofour {
 	font-size: 12rem;
+}
+
+#footer-four-zero-four {
+		height: 100%;
+		text-align: center;
+}
+
+img.profile-photo {
+    height: 90px;
+    width: 90px;
+		border-radius: 50%;
+		border: 5px solid #fe6b4b;
+}
+
+p.text-white-four-zero-four {
+    font-weight: 300;
+}
+
+/* profile box all pages */
+
+
+p.profile-heading {
+	font-size: 20px;
+	font-weight: 700px;
+	color: #3b5cc4;
+	font-weight: 700;
+}
+
+.profile-border {
+	padding: 20px;
+	border: 1px solid #3b5cc4;
+}
+
+/* about & CV page */
+
+.row-margin {
+	margin: 90px 0;
+}
+
+.line-break {
+    border: 2px solid #ff6b4a;
+    margin-bottom: 70px;
+}
+
+img.profile-photo-about {
+    height: 270px;
+    border-radius: 20px;
+    border: 5px solid #3b5cc4;
+}
+
+p.profile-heading-about {
+	font-size: 20px;
+	font-weight: 400px;
+	color: #3b5cc4;
+	font-weight: 700;
+}
+
+.profile-border-about {
+	padding: 20px;
+	border: 1px solid #3b5cc4;
+}
+
+img.company-logo {
+		width: 210px;
+}
+
+p.company-title {
+    font-size: 1.6rem;
+    color: blue;
+    font-weight: 700;
+}
+
+p.company-title span {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 400;
+		padding-left: 50px;
 }
