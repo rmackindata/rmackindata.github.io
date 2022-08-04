@@ -324,6 +324,7 @@ a.btn:hover {
   margin: auto;
   overflow-x: scroll;
   overflow-y: hidden;
+	overflow: hidden;
 }
 
 .slider::-webkit-scrollbar {
