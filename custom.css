@@ -50,11 +50,11 @@ a:hover {
 nav.navbar.navbar-expand-lg a {
 	color: #3b5cc4;
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 li.nav-item {
-	padding: 0 20px;
+	padding: 0 26px;
 }
 
 .headline {
@@ -386,4 +386,45 @@ button.ctrl-btn.pro-prev {
 button.ctrl-btn.pro-next {
     background: #fc6b4c;
     color: #fff;
+}
+
+.slider-container {
+	position: relative;
+}
+
+.slider-image {
+  display: block;
+  width: 200px;
+  height: auto;
+}
+
+.slider-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #3b5cc4;
+}
+
+.slider-container:hover .slider-overlay {
+  opacity: 0.8;
+}
+
+.slider-text a {
+  color: white;
+  font-size: 16px;
+	font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+	text-decoration: none;
 }
