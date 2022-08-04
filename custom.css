@@ -43,6 +43,10 @@ textarea {
 	font-family: inherit;
 }
 
+a:hover {
+	color: #3b5cc4;
+}
+
 nav.navbar.navbar-expand-lg a {
 	color: #3b5cc4;
 	font-weight: 700;
@@ -223,19 +227,17 @@ span#fourzerofour {
 		text-align: center;
 }
 
-img.profile-photo {
-    height: 90px;
-    width: 90px;
-		border-radius: 50%;
-		border: 5px solid #fe6b4b;
-}
-
 p.text-white-four-zero-four {
     font-weight: 300;
 }
 
 /* profile box all pages */
 
+img.profile-photo {
+    height: 120px;
+    width: 120px;
+		border-radius: 50%;
+}
 
 p.profile-heading {
 	font-size: 20px;
@@ -298,4 +300,18 @@ p.company-title span {
 
 span#fourzerofour {
     font-size: 12rem;
+}
+
+a.btn {
+    padding: 8px 16px;
+    color: #fff;
+    background: #fc6b4c;
+    font-weight: 700;
+    margin-right: 70px;
+		transition: 0.3s;
+}
+
+a.btn:hover {
+	background: #3b5cc4;
+	color: #fff;
 }
