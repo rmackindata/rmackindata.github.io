@@ -280,7 +280,7 @@ p.profile-heading-about {
 }
 
 img.company-logo {
-		width: 210px;
+		width: 140px;
 }
 
 p.company-title {
@@ -294,6 +294,10 @@ p.company-title span {
     color: #333;
     font-weight: 400;
 		padding-left: 50px;
+}
+
+.row-margin-about-page {
+    margin-bottom: 60px;
 }
 
 

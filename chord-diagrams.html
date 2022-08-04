@@ -93,17 +93,101 @@
       <div class="row-margin"></div>
 
       <div class="row mt-0 mb-4">
-        <div class="col">
+        <div class="col-12">
           <h2 class="mt-0 mb-4" id="seoprojects">Circular Chord backlink graphs in R</h2>
-          <div class="col">
+        </div>
+
+          <div class="col-6">
+            df_test_est_traffic
+          </div>
+
+          <div class="col-6">
+            df_test_est_traffic
+          </div>
+
+
+
+        <div class="col-12">
+
+            <p>Here is a quick tutorial about how to make a nice looking backlink chord diagram.</p>
+
+            <p>First head over to <a href="https://ahrefs.com/">AHREFS</a> and download your backlinks. </p>
+
+            <p>Export as a UTF-8 csv file, then rename the file backlinks.csv and move this into your R-Studio working directory.</p>
 
             <p>First thing you need to do is install the nesscary libaries</p>
 
             <pre>
               <code>
-                  df <- r(me) %<%
+                library(circlize)
+                library(ggplot2)
+                library(tidyverse)
+                library(dplyr)
+                library(janitor)
+                library(urltools)
               </code>
             </pre>
+
+            <p>Then run the following code, to create a nice looking chord diagram.</p>
+
+            <pre>
+              <code>
+                # load and clean csv file
+                df_import <- read_csv('backlinks.csv') %>%
+                  clean_names()
+
+                # rename columns
+                df1 <- df_import %>%
+                  rename(
+                    survey = referring_page_url,
+                    response = target_url,
+                    freq = domain_rating
+                  )
+
+                # parse URLS to list
+                df_url_list <- url_parse(df1$survey)$domain
+
+                #Add the parsed URL's list back into df
+
+                df1$survey <- df_url_list
+
+                # remove duplicate columns
+                df_clean <- df1[!duplicated(df1), ]
+
+                #sort columns via domain rating
+                df_sorted <- df_clean[order(-df_clean$freq),]
+
+
+                #head 360 top referring domains
+
+                df_head <- head(df_sorted, 360L, )
+
+                #filter out specific columns
+
+                df_head_filtered <- df_head %>%
+                  select(survey, response, freq)
+
+                #assinging to new df name
+                data_circle <- df_head_filtered
+
+                #filter follow and no follow
+                #df_test_est_traffic <- df_test_est_traffic[df_test_est_traffic$nofollow == "FALSE", ]
+
+                chordDiagram(data_circle,
+                             annotationTrack = "grid")
+                circos.trackPlotRegion(track.index = 1, panel.fun = function(x, y) {
+                  xlim = get.cell.meta.data("xlim")
+                  ylim = get.cell.meta.data("ylim")
+                  sector.name = get.cell.meta.data("sector.index")
+                  circos.text(mean(xlim), ylim[1] + .1, sector.name, facing = "clockwise", niceFacing = TRUE, adj = c(0, 0.6), col = "black")
+                }, bg.border = NA)
+
+                circos.clear()
+
+                # for best results export at 3333 pixles width
+              </code>
+            </pre>
+
           </div>
         </div>
       </div>
