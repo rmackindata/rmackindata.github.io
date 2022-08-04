@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /wp-admin/
+
+Sitemap: https://rmackindata.github.io/sitemap.xml
