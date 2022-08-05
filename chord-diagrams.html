@@ -118,20 +118,19 @@
             <p>First thing you need to do is install the nesscary libaries</p>
 
             <pre>
-              <code>
+              
                 library(circlize)
                 library(ggplot2)
                 library(tidyverse)
                 library(dplyr)
                 library(janitor)
                 library(urltools)
-              </code>
             </pre>
 
             <p>Then run the following code, to create a nice looking chord diagram.</p>
 
             <pre>
-              <code>
+
                 # load and clean csv file
                 df_import <- read_csv('backlinks.csv') %>%
                   clean_names()
@@ -185,7 +184,6 @@
                 circos.clear()
 
                 # for best results export at 3333 pixles width
-              </code>
             </pre>
 
           </div>
