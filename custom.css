@@ -319,6 +319,14 @@ a.btn:hover {
 	color: #fff;
 }
 
+div#message-portal {
+    border: 2px dashed #3b5cc4;
+}
+
+div#message-portal p {
+    padding: 10px;
+}
+
 /* slideshow homepage */
 
 .slider {
